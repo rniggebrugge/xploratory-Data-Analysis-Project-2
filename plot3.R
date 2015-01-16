@@ -21,7 +21,7 @@ development  <- summarize(yeartype, emissions=sum(Emissions))
 g <- ggplot(development, aes( year, emissions))
 g <- g + geom_point(color="blue") + geom_line(color="#0099ff")
 g <- g + facet_grid( . ~ type) + ggtitle("Baltimore ")
-g <- g + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+g <- g + theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 print(g)
 

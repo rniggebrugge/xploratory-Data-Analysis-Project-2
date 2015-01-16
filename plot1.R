@@ -1,8 +1,8 @@
 library(dplyr)
 
 # load data, files should be in current  working directory
-#scc <- readRDS("Source_Classification_Code.rds")
-#nei <- readRDS("summarySCC_PM25.rds")
+scc <- readRDS("Source_Classification_Code.rds")
+nei <- readRDS("summarySCC_PM25.rds")
 
 # group by year                                           #
 years              <- group_by(nei, year)
